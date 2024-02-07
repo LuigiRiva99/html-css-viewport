@@ -28,7 +28,7 @@ ol {
 } */
 
 #app {
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
 }
 
@@ -41,8 +41,19 @@ ol {
     display: flex;
     flex-direction: column;
     width: 200px;
+    height: 100%;
     color: white;
-    padding: 0px 30px;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.header-list{
+    padding-left: 20px;
+}
+
+.profile {
+    color: white;
+    padding-bottom: 15px;
 }
 
 .sub {
@@ -61,10 +72,13 @@ ol {
     border-radius: 999px;
     line-height: 30px;
     padding: 0px 10px;
+    margin-right: 20px;
 }
 
 #app .main-content {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 /* Sections */
@@ -72,7 +86,9 @@ ol {
 .sections{
     background-color: #141923;
     color: white;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .col-3 {
     width: calc(3 * 100% / 12);
@@ -97,5 +113,32 @@ ol {
 
 .section-list{
     padding: 30px;
+}
+
+/* footer */
+
+.footer-bar {
+    height: 80px;
+    background-color: #282828;
+    position: fixed;   
+    width: 100%;
+}
+
+footer .row{
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+footer .container {
+    height: 100%;
 }
 
