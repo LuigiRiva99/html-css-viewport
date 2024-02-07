@@ -15,8 +15,55 @@ a {
 	color: currentColor;
 }
 
-menu,
+/* menu,
 ul,
 ol {
 	list-style: none;
+} */
+
+/* LAYOUT */
+
+/* .container {
+    margin: 0 auto;
+} */
+
+#app {
+    height: 100vh;
+    display: flex;
 }
+
+.home {
+    background-color: black;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    color: white;
+    padding: 0px 30px;
+}
+
+.sub {
+    min-height: 10vh;
+    background-color: #0E121B;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.sub-btn {
+    border-radius: 999px;
+    line-height: 30px;
+    padding: 0px 10px;
+}
+
+.main-content {
+    width: 100%;
+}
+
